@@ -15,5 +15,4 @@ newContactButton.addEventListener('click', event => {
  toggleForm()
 })
 
-
-module.exports = form
+export {form, toggleForm, newContactButton}
