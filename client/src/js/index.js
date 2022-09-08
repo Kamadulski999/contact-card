@@ -1,7 +1,7 @@
 import "./form";
 import "./submit";
 import "../css/index.css";
-import { initDb } from "./database";
+import { initDb, getDb, postDb } from "./database";
 
 import Logo from '../images/logo.png';
 import Bear from '../images/bear.png';
@@ -14,5 +14,5 @@ window.addEventListener('load', function () {
     document.getElementById('logo').src = Logo;
     document.getElementById('bearThumbnail').src = Bear;
     document.getElementById('dogThumbnail').src = Dog;
-    initDb();
+    initDb(); 
   });
