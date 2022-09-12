@@ -2,7 +2,6 @@ import {getDb} from './database';
 import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
 
-
 export const fetchCards = async () => {
     // Grab card data from IndexedDB using our READ function
       const result = await getDb();

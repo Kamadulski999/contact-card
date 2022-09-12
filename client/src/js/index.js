@@ -15,8 +15,6 @@ import Logo from '../images/logo.png';
 import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
 
-
-
 // On load functionality
 window.addEventListener('load', function () {
   initdb();
@@ -25,12 +23,6 @@ window.addEventListener('load', function () {
   document.getElementById('bearThumbnail').src = Bear;
   document.getElementById('dogThumbnail').src = Dog;
 });
-
-if ('serviceWorker' in navigator) {
-  // Use the window load event to keep the page load performant
-  window.addEventListener('load', () => {
-  navigator.serviceWorker.register('./service-worker.js');
-})};
 
 // Form functionality
 const form = document.getElementById("formToggle");
@@ -107,3 +99,9 @@ window.editCard = (e) => {
   // Toggles the submit button so that it now Updates an existing contact instead of posting a new one
   submitBtnToUpdate = true;
 };
+
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+  navigator.serviceWorker.register('./service-worker.js');
+})};
