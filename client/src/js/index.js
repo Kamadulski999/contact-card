@@ -16,3 +16,22 @@ window.addEventListener('load', function () {
     document.getElementById('dogThumbnail').src = Dog;
     initDb();
   });
+
+  window.editCard = (e) => {
+   
+    profileId = parseInt(e.dataset.id);
+  
+  
+    let editName = e.dataset.name;
+    let editEmail = e.dataset.email;
+    let editPhone = e.dataset.phone;
+  
+    document.getElementById("name").value = editName;
+    document.getElementById("email").value = editEmail;
+    document.getElementById("phone").value = editPhone;
+  
+    form.style.display = "block";
+  
+  
+      submitBtnToUpdate = true;
+  };
